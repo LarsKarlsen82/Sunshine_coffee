@@ -1,0 +1,72 @@
+/* NavBar.module.scss */
+
+.navbar {
+  position: relative; /* make the navbar a positioning context */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* adjust padding */
+  height: 20px; /* set navbar height */
+}
+
+.circle {
+  position: absolute; /* position the circle absolutely within the navbar */
+  top: 82px; /* position at the vertical center */
+  left: 50%; /* position at the horizontal center */
+  transform: translate(-50%, -50%); /* center the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* set circle background color */
+  width: 170px; /* set circle width */
+  height: 170px; /* set circle height */
+  border-radius: 50%; /* make it round */
+  z-index: 2; /* push the circle behind the navbar */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* adjust logo size */
+  height: auto;
+}
+
+.circle h3 {
+  font-size: 1.8rem; /* increase font size */
+  margin: 0;
+  color: white; /* set text color */
+  font-family: 'Licorice', sans-serif;
+}
+
+.linksContainer {
+  position: absolute; /* position the links container absolutely */
+  top: 50%; /* position at the vertical center */
+  right: 20px; /* position at the right */
+  transform: translateY(-50%); /* center the links vertically */
+}
+
+.link {
+  color: white; /* set link color */
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2rem; /* set link font size */
+}
+.icon {
+  width: 40px; /* Adjust icon size as needed */
+  height: 40px;
+  margin-left: 20px; /* Add some spacing between icons and text */
+}
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 20px; /* Add some spacing between buttons */
+  border: 2px solid white;
+  border-radius: 5px;
+}

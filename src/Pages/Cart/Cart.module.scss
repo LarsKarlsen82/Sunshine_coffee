@@ -1,0 +1,58 @@
+/* Cart.module.scss */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Ensure the overlay is above other content */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* White background for the modal */
+  width: 90%;
+  max-width: 600px; /* Adjust max-width as needed */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; /* Ensure the modal is above the overlay */
+}
+
+.open {
+  display: block; /* Show the modal when open */
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1010; /* Ensure a higher z-index for the modal content */
+  position: relative; /* Ensure z-index works properly */
+}
+
+.modalContent h1 {
+  margin-bottom: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  left: 10px; /* Adjust to align with top right corner */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Slide-in animation when modal is open */
+.open .modal {
+  transform: translateX(0%);
+}
+.modalContent h1 {
+  color: black;
+  text-align: center;
+}

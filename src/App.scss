@@ -1,0 +1,16 @@
+// Licorice font:
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+// Inika font:
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import './Assets/css/Variables.scss';
+
+body {
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $VeryDarkGray;
+    padding: 10px;
+  }
+p {
+  font-family: 'Inika', sans-serif;
+}

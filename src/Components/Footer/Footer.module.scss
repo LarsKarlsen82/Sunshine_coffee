@@ -1,0 +1,77 @@
+@import '../../Assets/css/Variables.scss';
+
+// Define mixin for link styles
+@mixin linkStyles {
+  text-decoration: none;
+  color: $White;
+
+  &:hover {
+    text-decoration: underline; // Example: Underline on hover, adjust as needed
+  }
+}
+
+footer {
+  position: fixed; /* Fixed positioning to keep the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make the footer span the full width of the viewport */
+  background-color: $DarkGray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; // Allow flex items to wrap to the next line if needed
+
+  div {
+    text-align: left; // Align text to the left
+    max-width: 200px;
+    margin-bottom: 20px; // Add spacing between divs
+
+    h3 {
+      background-image: linear-gradient(315deg, #de4256 0%, #b78e51 74%);
+      -webkit-background-clip: text; /* Apply the gradient to the text content */
+      background-clip: text;
+      color: transparent;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $White;
+      font-size: 1em;
+      margin: 0; // Remove default margin
+      text-align: left
+
+    }
+
+    a {
+      @include linkStyles; // Include the link styles mixin
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image-section .image-row .image-column .image-module {
+      width: 100%;
+      padding: 15px;
+      margin-top: 160vh;
+    }
+
+    .image-module h2 {
+      text-align: center;
+      padding: 0 0 1em 0;
+    }
+
+    .image-module p {
+      text-align: left;
+      padding: 1em 1em 0 1em; /* Adjust padding for smaller screens */
+      font-family: 'Inika';
+    }
+  }
+}
+/* New styles for showing and hiding the footer */
+.showFooter {
+  display: flex;
+}
+
+.hideFooter {
+  display: none;
+}

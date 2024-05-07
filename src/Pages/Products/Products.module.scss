@@ -1,0 +1,95 @@
+/* Products.module.scss */
+
+.hero {
+  position: relative;
+  text-align: center;
+
+  img {
+      max-width: 100%;
+      height: 400px;
+      width: 100%;
+      top: 0;
+      object-fit: cover;
+  }
+
+  .heroContent {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; // Ensure the text is above the image
+      color: white; // Adjust text color if necessary
+      font-family: 'Licorice', sans-serif;
+      font-size: 2.3rem;
+  }
+}
+
+
+
+
+
+.productList {
+  padding: 20px;
+  height: 200vh;
+  background-color: white;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.product p {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.product .price {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.product button {
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 70px;
+  transition: background-color 0.3s, transform 0.1s; // Add transition effect for transform
+}
+
+.product button:hover {
+  background-color: #333; // Change background color on hover
+}
+
+.product button:active {
+  background-color: #666; // Change background color when button is clicked
+  transform: scale(0.9); // Scale down the button when clicked
+}
+
+h1 {
+  color: white;
+}

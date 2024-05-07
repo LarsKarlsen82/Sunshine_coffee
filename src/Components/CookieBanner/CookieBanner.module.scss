@@ -1,0 +1,22 @@
+/* CookieBanner.module.scss */
+
+.cookie {
+    box-sizing: border-box;
+    border: 1px solid blue; /* Correcting border property */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: wheat;
+    
+  }
+  
+  .cookie p {
+    color: black;
+    padding: 20px;
+  }
+  
+  .cookie button {
+    background-color: lightblue;
+    margin-left: 20px;
+  }
+  
