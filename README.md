@@ -1,8 +1,14 @@
-# React + Vite
+Der er front-end (Sunshine_coffee) og der er back-end (SunshineCoffee_API)
+Front-end henter data fra back-end, så man skal starte dem begge.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+For at starte begge servere:
 
-Currently, two official plugins are available:
+1. Åbn terminalen
+2. Åbn Git Bash
+3. cd ~
+4. dir
+5. find din SunshineCoffee-API
+6. tast "node server.js"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+7. Så åbn powershell
+8. tast "Npm run dev"
